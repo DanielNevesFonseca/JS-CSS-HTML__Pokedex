@@ -5,12 +5,12 @@
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: .2s;
+    transition: 0.2s;
     border: none;
 }
 
 body {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #f7f7f7;
     color: #141414;
     overflow-x: hidden !important;
