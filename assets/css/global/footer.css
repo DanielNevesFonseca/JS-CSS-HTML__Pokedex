@@ -3,10 +3,16 @@
     bottom: 0;
     left: 0;
     width: 100%;
-}
+    background: linear-gradient(
+        90deg,
+        rgb(244,220,38),
+        rgb(255,230,45)
+    );}
 
 .footer h3 {
     font-size: .8rem;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .footer h3 a {

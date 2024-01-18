@@ -11,13 +11,13 @@ function loadPokemonitens(offset, limit) {
         const newHtml = pokemons.map((pokemon) =>
             `<li class="fadeIn">
                 <a href="details.html?id=${pokemon.id}" class="pokemon">
-                <span class="number slideInDown">#${pokemon.number}</span>
+                <span class="number slideInDown">${pokemon.number}</span>
                 <h2 class="name slideInDown">${pokemon.name}</h2>
                 <div class="detail">
+                <img src="${pokemon.photo}" alt="${pokemon.name}" width="156" height="144" class="slideInRight"> 
                     <ol class="types">
                         ${pokemon.types.map((type) => `<li class="type slideInLeft ${type}">${type}</li>`).join('')}
                     </ol>
-                <img src="${pokemon.photo}" alt="${pokemon.name}" width="156" height="144" class="slideInRight"> 
                 </div>
             </a>
         </li> 

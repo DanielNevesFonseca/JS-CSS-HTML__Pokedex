@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
     <title>Pokedex Web</title>
 
-    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- css -->
-    <link rel="preload" href="./assets/css/styles.min.css" as="style">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" href="./assets/css/styles.min.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Google Fonts: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header-bg fadeIn" aria-label="Cabeçalho">
-        <div class="header container">
-            <a href="index.html" class="logo">
-                <img src="assets/imgs/header/pokeball.svg" width="32" height="32" alt="Logo Pokeball">
-            </a>
+      <div class="header container">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/imgs/header/logo.svg"
+            width="60"
+            height="60"
+            alt="Logo Pokeball"
+          />
+        </a>
 
-            <label for="search">
-                <input type="text" placeholder="Pesquise o Pokémon" id="search" name="search">
-            </label>
+        <label for="search">
+          <input
+            type="text"
+            placeholder="Pesquise o Pokémon"
+            id="search"
+            name="search"
+          />
+        </label>
 
-            <nav aria-label="Primária">
-                <ul class="header-menu">
-                    <li><a href="index.html">Início
-                        </a>
-                    </li>
-                    <li><a href="details.html">
-                            Pokemons
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav aria-label="Primária">
+          <ul class="header-menu">
+            <li><a href="index.html">Início </a></li>
+            <li><a href="details.html"> Pokemons </a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="content">
-        <h1 class="titulo">Lista de Pokemons</h1>
-        <ol id="pokemonList" class="pokemons">
-        </ol>
+      <h1 class="titulo">Lista de Pokemons</h1>
+      <ol id="pokemonList" class="pokemons"></ol>
 
-        <div class="pagination fadeIn">
-            <button id="loadMoreButton" type="button">
-                Carregar mais
-            </button>
-        </div>
+      <div class="pagination fadeIn">
+        <button id="loadMoreButton" type="button">Carregar mais</button>
+      </div>
     </main>
 
-    <footer class="footer container fadeIn" aria-label="Rodapé">
-        <h3>Criado por <a href="https://www.instagram.com/brenda_a_s_dev/" target="_blank">@brenda-a-s-dev</a>.</h3>
+    <footer class="footer container" aria-label="Rodapé">
+      <h3>
+        <a href="https://github.com/DanielNevesFonseca" target="_blank"
+          >@danielnevesfonseca</a
+        >.
+      </h3>
     </footer>
 
     <!-- <script src="assets/js/loadPokemon.js"></script> -->
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
